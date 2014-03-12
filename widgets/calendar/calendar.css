@@ -1,0 +1,25 @@
+#event1name, #event1date, #event2name, #event2date {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+#event1name {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#event1date {
+	font-size:26px;
+  	opacity:.8;
+}
+
+#event2name {
+  font-size:30px;
+  font-weight: bold;
+  margin-top:30px;
+}
+
+#event2date {
+  font-size:16px;
+  opacity:.8;
+}

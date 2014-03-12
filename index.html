@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>CSESoc Dashboard</title>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.gridster.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="widgets/clock/clock.css">
+    <link rel="stylesheet" href="widgets/calendar/calendar.css">
+    <link rel="stylesheet" href="widgets/quotes/quotes.css">
+    <link rel="stylesheet" href="widgets/dc/dc.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</head>
+<body onload="">
+
+<div role="main">
+
+    <section class="dashboard">
+        <div class="gridster horizontal-layout">
+          <ul>
+
+          <!-- widgets -->
+
+            <li data-row="1" data-col="1" data-sizex="2" data-sizey="2" class="orange">
+                <h3 class="heading">Welcome</h3>
+                <div id="tileWrapper">
+                    <h4>Welcome to the Socs office.</h1>
+                </h4>
+                
+            </li>
+            
+            <li data-row="1" data-col="2" data-sizex="2" data-sizey="2" class="purple">
+                <h3 class="heading">DC</h3>
+                <div id="tileWrapper">
+                    <div class="dc-container">
+                        <h2><div class="dc">
+                            Who is DC?
+                        </div></h2>
+                    </div>
+                </div>
+            </li>
+
+            <li data-row="1" data-col="3" data-sizex="2" data-sizey="2" class="blue">
+                <h3 class="heading">Quotes</h3>
+                <div id="tileWrapper">
+                    <div id="quoteQuote"></div>
+                    <div id="quotePerson"></div>
+                </div>
+                
+            </li>
+
+            
+            
+            <li data-row="2" data-col="1" data-sizex="2" data-sizey="2" class="teal">
+                  <h3 class="heading">Calendar</h3>
+                  <div id="tileWrapper">
+                      <div id="event1name">Loading...</div>
+                      <div id="event1date">Loading...</div>
+                      <br />
+                      <div id="event2name">Loading...</div>
+                      ><div id="event2date">Loading...</div>
+                  </div>
+            </li>
+            
+            <li data-row="2" data-col="2" data-sizex="4" data-sizey="2" class="clean">
+                <div id="timeWrap">
+                    <h1><div id="date"></div></h1>
+                    <h2><div id="time"></div></h2>
+                </div>
+            </li>
+          
+            <li data-row="2" data-col="3" data-sizex="4" data-sizey="2" class="gold">
+                <div id="images"></div>
+            </li>
+          </ul>
+        </div>
+        
+    </section>
+    
+</div>
+
+<script type="text/javascript" src="js/jquery.gridster.js" charset="utf-8"></script>
+
+
+
+
+<script type="text/javascript">
+    var gridster;
+
+    $(function(){
+
+        gridster = $(".gridster > ul").gridster({
+            widget_margins: [10, 10],
+            widget_base_dimensions: [217,245],
+            min_cols: 8
+        }).data('gridster');
+
+    });
+
+
+</script>
+    <script type="text/javascript" src="widgets/clock/clock.js" charset="utf-8"></script>
+    <script type="text/javascript" src="widgets/calendar/calendar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="widgets/dc/dc.js" charset="utf-8"></script>
+    <script type="text/javascript" src="widgets/quotes/quotes.js" charset="utf-8"></script>
+    <script type="text/javascript" src="widgets/images/images.js" charset="utf-8"></script>
+
+</body>
+</html>

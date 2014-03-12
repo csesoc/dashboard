@@ -1,0 +1,15 @@
+#quoteQuote, #quotePerson {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	margin:0 !important;
+}
+
+#quoteQuote {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#quotePerson {
+	font-size:26px;
+  	opacity:.8;
+}
