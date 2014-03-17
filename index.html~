@@ -28,7 +28,7 @@
 
           <!-- widgets -->
 
-            <li data-row="1" data-col="1" data-sizex="2" data-sizey="2" class="blue widget1" id="welcomeWidget">
+            <li data-row="1" data-col="1" data-sizex="2" data-sizey="2" class="orange">
                 <h3 class="heading">Welcome</h3>
                 <div id="tileWrapper">
                     <h4>Welcome to the Socs office.</h1>
@@ -36,7 +36,7 @@
                 
             </li>
             
-            <li data-row="1" data-col="2" data-sizex="2" data-sizey="2" class="purple widget1" id="dcWidget">
+            <li data-row="1" data-col="2" data-sizex="2" data-sizey="2" class="purple">
                 <h3 class="heading">DC</h3>
                 <div id="tileWrapper">
                     <div class="dc-container">
@@ -47,7 +47,7 @@
                 </div>
             </li>
 
-            <li data-row="1" data-col="3" data-sizex="2" data-sizey="2" class="orange widget1" id="quotesWidget">
+            <li data-row="1" data-col="3" data-sizex="2" data-sizey="2" class="gold">
                 <h3 class="heading">Quotes</h3>
                 <div id="tileWrapper">
                     <div id="quoteQuote"></div>
@@ -58,25 +58,25 @@
 
             
             
-            <li data-row="2" data-col="1" data-sizex="2" data-sizey="2" class="teal widget1" id="calendarWidget">
+            <li data-row="2" data-col="1" data-sizex="2" data-sizey="2" class="teal">
                   <h3 class="heading">Calendar</h3>
                   <div id="tileWrapper">
                       <div id="event1name">Loading...</div>
                       <div id="event1date">Loading...</div>
                       <br />
                       <div id="event2name">Loading...</div>
-                      <div id="event2date">Loading...</div>
+                      ><div id="event2date">Loading...</div>
                   </div>
             </li>
             
-            <li data-row="2" data-col="2" data-sizex="4" data-sizey="2" class="clean widget2" id="clockWidget">
+            <li data-row="2" data-col="2" data-sizex="4" data-sizey="2" class="clean">
                 <div id="timeWrap">
                     <h1><div id="date"></div></h1>
                     <h2><div id="time"></div></h2>
                 </div>
             </li>
           
-            <li data-row="2" data-col="3" data-sizex="4" data-sizey="2" class="clean widget2" id="imageWidget">
+            <li data-row="2" data-col="3" data-sizex="4" data-sizey="2" class="gold">
                 <div id="images"></div>
             </li>
           </ul>
@@ -106,9 +106,6 @@
 
 
 </script>
-    <script type="text/javascript" src="js/transition.js" charset="utf-8"></script>
-
-
     <script type="text/javascript" src="widgets/clock/clock.js" charset="utf-8"></script>
     <script type="text/javascript" src="widgets/calendar/calendar.js" charset="utf-8"></script>
     <script type="text/javascript" src="widgets/dc/dc.js" charset="utf-8"></script>

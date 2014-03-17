@@ -1,21 +1,31 @@
 function playImages() {
-	var images = new Array();
-	images[0] = "1.jpg";
-	images[1] = "2.jpg";
-	images[2] = "3.jpg";
-	images[3] = "4.jpg";
-	images[4] = "5.jpg";
-	images[5] = "6.jpg";
-	images[6] = "7.jpg";
-	images[6] = "8.jpg";
-	images[7] = "9.jpg";
-	images[8] = "10.jpg";
-	images[9] = "11.jpg";
+	var albumID;
+	var photoID;
+	var photoURL;
+	$.getJSON("https://graph.facebook.com/csesoc/albums", function( albumdata ) {
+		var array = albumdata.data;
 
-	var selected = Math.floor((Math.random()*images.length));
+		var albumob = array[Math.floor(Math.random()*array.length)];
+		albumID = albumob.id
+		while (albumID=="279434445422868" || albumID=="211032138929766") {
+			var albumob = array[Math.floor(Math.random()*array.length)];
+			albumID = albumob.id
+		}
+		console.log(albumID)
 
-	$('#images').parent().css('background','url(http://csesoc.web.cse.unsw.edu.au/projects/dashboard/images/'+images[selected]+')');
-	$('#images').parent().css('background-size','cover');
+		$.getJSON("https://graph.facebook.com/"+albumID+"/photos", function( photodata ) {
+			
+			var array = photodata.data;
+			var photoob = array[Math.floor(Math.random()*array.length)];
+			photoID = photoob.id
+			photoURL = photoob.images[0].source
+			console.log(photoURL)
+
+			$('#images').parent().css({'background-image':'url('+photoURL+')'});
+  			$('#images').parent().css('background-size','cover');
+		});
+	});
+
 }
 
 playImages();

@@ -13,7 +13,7 @@ function trans1() {
 
 
 
-//setInterval(trans1,10000);
+setInterval(trans1,10000);
 
 function trans2() {
 	var randombig = Math.floor(Math.random() * $('.widget2').length);
